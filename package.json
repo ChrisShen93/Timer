@@ -13,7 +13,8 @@
   "scripts": {
     "build": "tsc",
     "unit": "jest --coverage",
-    "doc": "typedoc --out doc/ ./src/index.ts --readme none"
+    "doc": "typedoc --out doc/ ./src/index.ts --readme none",
+    "lint": "tslint --fix src/** __tests__/**"
   },
   "keywords": [
     "Timer",
@@ -22,6 +23,13 @@
     "typescript"
   ],
   "author": "Chris <chrisshen93@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ChrisShen93/Timer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ChrisShen93/Timer/issues"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^23.1.1",
