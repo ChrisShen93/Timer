@@ -5,9 +5,9 @@ export default class Timer {
   // 0 = idle, 1 = running, 2 = paused, 3 = resumed
   private state: number = 0
   // save the intervalID which created by the call to setInterval(), it will be a non-zero number
-  private intervalId!: number
+  private intervalId!: NodeJS.Timer
   // save the timeoutID which created by the call to setTimeout(), it will be a non-zero number
-  private timeoutId!: number
+  private timeoutId!: NodeJS.Timer
   private startTime!: number
   private remaining: number = -1
 
@@ -36,7 +36,7 @@ export default class Timer {
       this.callback()
       this.state = 0
       this.start()
-    }, this.remaining);
+    }, this.remaining)
   }
   stop () {
     if (this.state === 0) return
