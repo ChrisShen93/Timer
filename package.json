@@ -2,7 +2,14 @@
   "name": "timer",
   "version": "0.0.1",
   "description": "A timer plugin.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "src/index.ts",
+  "typings": "types/index.d.ts",
+  "files": [
+    "src",
+    "dist/*.js",
+    "types/*.d.ts"
+  ],
   "scripts": {
     "build": "tsc",
     "unit": "jest --coverage",
