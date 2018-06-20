@@ -1,3 +1,6 @@
+/**
+ * @module Timer
+ */
 export default class Timer {
   private callback: () => void
   private interval: number

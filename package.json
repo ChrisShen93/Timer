@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "unit": "jest --coverage"
+    "unit": "jest --coverage",
+    "doc": "typedoc --out doc/ ./src/index.ts --readme none"
   },
   "keywords": [
     "Timer",
@@ -21,6 +22,8 @@
     "ts-jest": "^22.4.6",
     "tslint": "^5.10.0",
     "tslint-config-standard": "^7.0.0",
+    "typedoc": "^0.11.1",
+    "typedoc-plugin-external-module-name": "^1.1.1",
     "typescript": "^2.9.2"
   }
 }
