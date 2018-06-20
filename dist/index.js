@@ -1,5 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+/**
+ * @module Timer
+ */
 var Timer = /** @class */ (function () {
     function Timer(cb, interval) {
         // 0 = idle, 1 = running, 2 = paused, 3 = resumed

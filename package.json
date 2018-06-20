@@ -2,10 +2,19 @@
   "name": "timer",
   "version": "0.0.1",
   "description": "A timer plugin.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "src/index.ts",
+  "typings": "types/index.d.ts",
+  "files": [
+    "src",
+    "dist/*.js",
+    "types/*.d.ts"
+  ],
   "scripts": {
     "build": "tsc",
-    "unit": "jest"
+    "unit": "jest --coverage",
+    "doc": "typedoc --out doc/ ./src/index.ts --readme none",
+    "lint": "tslint --fix src/** __tests__/**"
   },
   "keywords": [
     "Timer",
@@ -14,6 +23,13 @@
     "typescript"
   ],
   "author": "Chris <chrisshen93@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ChrisShen93/Timer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ChrisShen93/Timer/issues"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^23.1.1",
@@ -21,6 +37,8 @@
     "ts-jest": "^22.4.6",
     "tslint": "^5.10.0",
     "tslint-config-standard": "^7.0.0",
+    "typedoc": "^0.11.1",
+    "typedoc-plugin-external-module-name": "^1.1.1",
     "typescript": "^2.9.2"
   }
 }
