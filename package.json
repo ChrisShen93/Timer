@@ -1,0 +1,26 @@
+{
+  "name": "timer",
+  "version": "0.0.1",
+  "description": "A timer plugin.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "unit": "jest"
+  },
+  "keywords": [
+    "Timer",
+    "pause",
+    "resume",
+    "typescript"
+  ],
+  "author": "Chris <chrisshen93@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^23.1.1",
+    "jest": "^23.1.0",
+    "ts-jest": "^22.4.6",
+    "tslint": "^5.10.0",
+    "tslint-config-standard": "^7.0.0",
+    "typescript": "^2.9.2"
+  }
+}
